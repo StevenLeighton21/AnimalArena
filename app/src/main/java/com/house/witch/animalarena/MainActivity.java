@@ -19,11 +19,14 @@ public class MainActivity extends AppCompatActivity {
     private Spinner animal1;
     private Spinner animal2;
     private Button fightButton;
+    private AnimalDatabaseHelper animalDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        animalDb = new AnimalDatabaseHelper(this);
 
         animals = new ArrayList<Animal>();
         animals.add(new Animal("Panda"));
