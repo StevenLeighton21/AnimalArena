@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Animal Arena</string>
+    <string name="title_activity_display_victor">DisplayVictorActivity</string>
+</resources>
